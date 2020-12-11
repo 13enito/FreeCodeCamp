@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<head>
+	<style>
+	</style>
+</head>
+<body>
+	<h1 id="title">Survey Form Title</h1>
+	<p id="description">This is the description of the survey form</p>
+	<form id="survey-form">
+		<label for="name" id="name-label">Name: </label><input type="text" id="name" name="name" placeholder="Enter your name" required><br>
+		<label for="email" id="email-label">Email: </label><input type="email" id="email" name="email" placeholder="Enter your email address" required><br>
+		<label for="number" id="number-label">Age: </label><input type="number" id="number" name="number" min="13" max="100" placeholder="Age"><br>
+		<label for="dropdown" id="dropdown-label">Favorite Team: </label><select id="dropdown" name="dropdown">
+			<option value="diamondbacks">Arizona Diamondbacks</option>
+			<option value="reds">Cincinnati Reds</option>
+			<option value="whitesox">Chicago White Sox</option>
+			<option value="cardinals">St. Louis Cardinals</option>
+		</select><br>
+		<label for="sport">Favorite Sport:</label><br>
+			<label for="baseball"><input type="radio" id="baseball" name="sport" value="baseball">Baseball</label><br>
+			<label for="basketball"><input type="radio" id="basketball" name="sport" value="basketball">Basketball</label><br>
+			<label for="football"><input type="radio" id="football" name="sport" value="football">Football</label><br>
+			<label for="soccer"><input type="radio" id="soccer" name="sport" value="soccer">Soccer</label><br>
+		<label for="interests">What are your other interests?</label><br>
+			<label for="computers"><input type="checkbox" id="computers" name="interests" value="computers">Computers</label><br>
+			<label for="reading"><input type="checkbox" id="reading" name="interests" value="reading">Reading</label><br>
+			<label for="outdoors"><input type="checkbox" id="outdoors" name="interests" value="outdoors">Outdoors</label><br>
+			<label for="videogames"><input type="checkbox" id="videogames" name="interests" value="videogames">Video Games</label><br>
+		<label for="comments" id="comments-label">Additional Comments: </label><br>
+			<textarea id="comments" name="comments" rows="4" cols="50"></textarea><br>
+		<button type="submit" id="submit">Submit This</button>
+	</form>
+</body>
